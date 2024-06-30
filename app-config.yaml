@@ -67,7 +67,17 @@ auth:
   providers:
     # See https://backstage.io/docs/auth/guest/provider
     guest: {}
-
+    google:
+      development:
+        clientId: ****************************.apps.googleusercontent.com
+        clientSecret: *********************
+        signIn:
+          resolvers:
+            - resolver: emailMatchingUserEntityProfileEmail
+    github:
+      development:
+        clientId: ********************
+        clientSecret: ********************
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
 

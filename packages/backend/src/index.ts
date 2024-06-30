@@ -19,6 +19,9 @@ backend.add(import('@backstage/plugin-techdocs-backend/alpha'));
 backend.add(import('@backstage/plugin-auth-backend'));
 // See https://backstage.io/docs/backend-system/building-backends/migrating#the-auth-plugin
 backend.add(import('@backstage/plugin-auth-backend-module-guest-provider'));
+//backend.add(import('@backstage/plugin-auth-backend-module-google-provider'));
+backend.add(import('./authModuleGithubProvider'))
+backend.add(import('./authModuleGoogleProvider'));
 // See https://backstage.io/docs/auth/guest/provider
 
 // catalog plugin
